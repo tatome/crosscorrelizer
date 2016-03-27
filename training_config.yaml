@@ -1,0 +1,19 @@
+# Sample configuration file for learn.py.
+# Used to learn localization using the Xtion microphones.
+
+# Regular expression pattern for extracting the angle from which a recording 
+# was made from the filename.
+filename_pattern : "sample_at_(?P<angle>-?[0-9][0-9]*)_deg_mode_1_speaker_default_micExtern.wav"
+
+# The sample rate to expect in recordings
+sample_rate : 48000
+
+# The maximum interaural time difference to expect
+max_itd : 0.0005
+
+# The greatest frequency to consider.
+max_frequency : 24000
+
+# The sample length to expect (During learning, larger samples will be cut 
+# into smaller snippets of that length).
+sample_length : 0.25
